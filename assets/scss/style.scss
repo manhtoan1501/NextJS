@@ -1,0 +1,73 @@
+@import "./variables";
+@import "./reset";
+@import "./main";
+
+//Import Layout
+@import "./components/Layout/footer";
+@import "./components/Layout/header";
+@import "./components/Layout/error_page";
+@import "./components/Layout/layout";
+
+//Import Index
+@import "./components/Index/title_block";
+@import "./components/Index/banner_ecommerce";
+@import "./components/Index/hot_location";
+
+//Import Layered Navigation
+@import "components/LayeredNavigation/search";
+@import "components/LayeredNavigation/top_layered";
+@import "components/LayeredNavigation/breadcrumbs";
+
+//Import Search
+@import "./components/Search/keyword";
+
+//Grid List
+@import "./components/GridList/grid_list";
+@import "./components/GridList/grid_item";
+
+//Project
+@import "./components/Project/banner_slider";
+@import "./components/Project/title_project";
+@import "./components/Project/project_info";
+@import "./components/Project/calculate_borrow";
+@import "./components/Project/lightbox";
+@import "./components/Project/album_view";
+@import "./components/Project/Broker/broker";
+@import "./components/Project/contact_area";
+
+//Ad Sell Leases
+@import "./components/AdSellLeases/belong_project";
+@import "./components/AdSellLeases/project_price";
+
+//Login
+@import "./components/Login/modal";
+
+//Pagination
+@import "./components/Pagination/pagination";
+
+//Display
+@import "./components/Display/loading";
+@import "./components/Display/empty_page";
+
+//Comment
+@import './components/Comment/comment';
+@import "./components/Comment/comment_item";
+
+//Share
+@import "./components/Share/share";
+
+//About Us
+@import "./components/LandingPage/BannerLandingPage";
+@import "./components/LandingPage/CardLandingPage";
+@import "./components/LandingPage/MissionLandingPage";
+@import "./components/LandingPage/StrengthsLandingPage";
+@import "./components/LandingPage/AboutUs";
+
+//Compare Page
+@import "./components/Compare/compare_main";
+// Partner
+@import "./components/Search/partner.scss"
+// 
+// OwlCarousel
+// @import "./components/OwlCarousel/styles.scss";
+// @import "./components/OwlCarousel/styles.css.map";

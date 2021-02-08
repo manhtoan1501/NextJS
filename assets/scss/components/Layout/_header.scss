@@ -1,0 +1,728 @@
+@import "../../_variables.scss";
+.header_background {
+  background-color: #fff;
+  height: 70px;
+  width: 100%;
+  @include breakpoint(smDown) {
+    height: 60px;
+  }
+}
+.next-progress {
+  z-index: 20000;
+  position: relative;
+  top: 0;
+}
+.spinner-icon {
+  display: none!important;
+}
+#nprogress {
+  position: fixed;
+  z-index: 20000;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.header {
+  padding: 0 30px;
+  background-color: #fff;
+  height: 70px;
+  border-bottom: 1px solid #f2f2f2;
+  position: fixed;
+  z-index: 1290;
+  @include breakpoint(smDown) {
+    height: 60px;
+  }
+  &__left {
+    width: 30px;
+    float: left;
+  }
+  &__center {
+    width: calc(100% - 30px - 400px);
+    float: left;
+    flex-grow: unset;
+    @include breakpoint(mdDown) {
+      width: calc(100% - 30px - 40px);
+    }
+    &__search {
+      width: calc(100% - 20px);
+      background-color: rgba(0,0,0,.04);
+      height: 45px;
+      margin: 12.5px 0 12.5px 20px;
+      max-width: 400px;
+      border-radius: 4px;
+      position: relative;
+      @include breakpoint(smDown) {
+        height: 40px;
+        margin: 10px 0 10px 20px;
+      }
+      &__icon {
+        width: 40px;
+        height: 40px;
+        margin: 2.5px 0 2.5px 0;
+        float: left;
+        @include breakpoint(smDown) {
+          margin: 0;
+        }
+        svg {
+          width: 14px;
+          height: 14px;
+          fill: #aaa;
+          margin: 14px 13px;
+        }
+      }
+      &__box {
+        width: calc(100% - 100px);
+        height: 45px;
+        float: left;
+        line-height: 45px;
+        font-family: $fontFamily;
+        font-weight: 700;
+        @include breakpoint(smDown) {
+          width: 100%;
+          top: -3px;
+          left: 0;
+          position: absolute;
+        }
+        .MuiInputBase-root {
+          width: 100%;
+        }
+        input {
+          font-size: 14px;
+          width: calc(100% + 40px)!important;
+          height: 41px!important;
+          padding: 0 20px 0 40px!important;
+          margin: 0 0 0 -40px;
+          border-radius: 4px;
+          border: 2px rgba(0,0,0,0) solid;
+          &::placeholder {
+            color: $baseTitleColor;
+          }
+          @include breakpoint(smDown) {
+            width: 100%;
+            margin: 0;
+            height: 36px!important;
+          }
+          &:focus {
+            border: 2px $baseColor solid;
+          }
+        }
+      }
+      &__type {
+        width: 90px;
+        float: left;
+        border-left: 1px #e0e0e0 solid;
+        height: 30px;
+        margin: 7.5px 0 7.5px 0;
+        padding: 0;
+        line-height: 30px;
+        font-size: 14px;
+        font-family: $fontFamily;
+        font-weight: 700;
+        color: $baseTitleColor;
+        button {
+          width: 100%!important;
+          height: 45px;
+          margin: -7.5px 0 -7.5px -1px!important;
+          padding: 0 10px 0 10px!important;
+          border-radius: 0;
+          font-size: 14px!important;
+          font-family: $fontFamily!important;
+          font-weight: 700!important;
+          color: $baseTitleColor!important;
+          text-transform: unset!important;
+          &:hover {
+            background-color: unset!important;
+          }
+        }
+        &__popup {
+          top: 2px!important;
+          left: 0!important;
+          .MuiPaper-root {
+            left: 330px!important;
+            @include breakpoint(mdDown) {
+              left: 320px!important;
+            }
+          }
+          .MuiListItemText-multiline {
+            padding-right: 20px;
+          }
+          .MuiButtonBase-root {
+            padding-left: 10px;
+            padding-right: 20px;
+            min-width: 150px;
+            .MuiListItemIcon-root {
+              min-width: 40px;
+            }
+            .MuiListItemText-root {
+              span {
+                color: $baseTitleColor;
+                font-weight: 400;
+                font-size: 14px;
+                font-family: $fontFamily;
+              }
+            }
+          }
+        }
+        @include breakpoint(smDown) {
+          display: none;
+        }
+        svg {
+          width: 14px;
+          height: 14px;
+          fill: $baseTitleColor;
+          margin: 0 8px -3px 0;
+        }
+      }
+      &__button {
+        min-width: unset!important;
+        width: 50px!important;
+        height: 35px;
+        margin: 5px!important;
+        float: left;
+        border: 0!important;
+        background-color: rgba($baseColor, 0.8)!important;
+        border-radius: 4px;
+        @include breakpoint(smDown) {
+          display: none!important;
+        }
+        svg {
+          fill: #fff;
+          width: 14px!important;
+          height: 14px!important;
+        }
+      }
+    }
+  }
+  &__right {
+    width: 400px;
+    float: right;
+    @include breakpoint(mdDown) {
+      width: 40px;
+    }
+  }
+  .search_homepage__body_box {
+    width: calc(100% - 20px);
+    background-color: #fff;
+    height: 45px;
+    margin: 7.5px 0 7.5px 20px!important;
+    border-radius: 4px;
+    float: left;
+    color: $baseTitleColor;
+    box-shadow: inset 0 0 0 1px #dcdcdc;
+    @include breakpoint(lgDown) {
+      width: calc(100% - 40px);
+      margin: 0 20px 0 20px;
+    }
+    .search_homepage__body_box_select {
+      width: 120px;
+      float: left;
+      position: relative;
+      height: 30px;
+      padding: 7.5px 0 7.5px 20px;
+      line-height: 30px;
+      font-family: $fontFamily;
+      cursor: pointer;
+      p {
+        width: calc(100% - 45px);
+        float: left;
+        font-size: 15px;
+        font-family: $fontFamily;
+      }
+      svg.search_homepage__banner_arrow_down {
+        float: right;
+        height: 30px;
+        margin: 0 10px;
+      }
+      .search_homepage__body_popup_background {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: 10000;
+      }
+      .search_homepage__body_popup {
+        width: 200px;
+        background-color: #f0f0f0;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        text-align: center;
+        border-radius: 4px;
+        padding: 10px 0;
+        z-index: 10001;
+        svg.search_homepage__banner_arrow_up {
+          margin: -24px 0 0 0;
+          width: 100%;
+          height: 25px;
+          fill: #fff;
+          top: 0;
+          float: left;
+          text-align: center;
+        }
+        .search_homepage__body_popup_item {
+          width: 100%;
+          float: left;
+          text-align: left;
+          padding: 0 20px 0 20px;
+          font-family: $fontFamily;
+          color: $baseTitleColor;
+          font-size: 15px;
+          &:hover {
+            background: #f0f0f0;
+          }
+          .search_homepage__body_popup_checkbox {
+            padding: 5px;
+          }
+        }
+      }
+    }
+    .search_homepage__body_box_input {
+      width: calc(100% - 120px - 45px);
+      float: left;
+      @include breakpoint(smDown) {
+        width: calc(100% - 50px);
+      }
+      .search_homepage__body_box_input_base {
+        height: 30px;
+        width: 100%;
+        padding: 0 15px 0 15px;
+        border-left: 1px rgb(224, 224, 224) solid;
+        margin: 7.5px 0 7.5px 0;
+      }
+    }
+    .search_homepage__body_box_button {
+      width: 45px;
+      height: 45px;
+      float: left;
+      cursor: pointer;
+      border: 0;
+      padding: 0;
+      margin: 0;
+      min-width: unset;
+      border-radius: 0 4px 4px 0;
+      svg {
+        width: 25px;
+        height: 25px;
+        fill: #aaa;
+        margin: 10px;
+      }
+    }
+  }
+  @include breakpoint(mdDown) {
+    padding: 0 20px;
+  }
+  .header_logo {
+    cursor: pointer;
+    svg {
+      height: 35px;
+      fill: $baseColor;
+      margin: 16px 0 12px 0;
+      @include breakpoint(smDown) {
+        margin: 11.5px 0 12px 0;
+      }
+    }
+  }
+
+  .header_button {
+    float: right;
+    font-weight: 900;
+    font-family: $fontFamily;
+    border-radius: 4px;
+    font-size: 13px;
+    height: 40px;
+    margin: 15px 0 10px 5px;
+    line-height: 38px;
+    cursor: pointer;
+    @include breakpoint(smDown) {
+      margin: 10px 0 10px 5px;
+    }
+    &._no_padding {
+      margin: 15px 5px 15px 10px;
+      height: 40px;
+      width: 40px;
+      min-width: 40px;
+      border-radius: 50%;
+      border: 1px $baseColor solid;
+      padding: 2px;
+      .MuiAvatar-root {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        overflow: hidden;
+      }
+      &:hover {
+        background-color: unset;
+      }
+    }
+    &._full {
+      border: 2px $baseColor solid;
+      color: #fff;
+      padding: 0 20px;
+      background-color: $baseColor;
+    }
+    &._border {
+      border: 2px $baseColor solid;
+      color: $baseColor;
+      padding: 0 20px;
+    }
+    &._empty {
+      border: 2px #fff solid;
+      color: $baseTitleColor;
+      padding: 0 10px;
+      border-radius: 4px;
+      margin: 15px 0 10px 3px;
+      &.active {
+        background:  #e3eef4;
+        border-color: #e3eef4;
+        .MuiButton-label {
+          color: $baseColor;
+        }
+      }
+      &:hover {
+        background:  #e3eef4;
+        border-color:  #e3eef4;
+        .MuiButton-label {
+          color: $baseColor;
+        }
+      }
+    }
+    &._menu {
+      line-height: 40px;
+      margin-right: -15px;
+      svg {
+        width: 25px;
+        height: 25px;
+        margin: -4px 0 0 0;
+      }
+    }
+  }
+}
+
+.header_button__popup {
+  top: 15px!important;
+  right: 0!important;
+  .MuiPaper-root {
+    right: 30px!important;
+    left: unset!important;
+  }
+  .MuiListItemText-multiline {
+    padding-right: 20px;
+  }
+  .MuiButtonBase-root {
+    padding-left: 20px;
+    padding-right: 20px;
+    .MuiListItemIcon-root {
+      min-width: 40px;
+    }
+    .MuiListItemText-root {
+      span {
+        color: $baseTitleColor;
+      }
+    }
+  }
+  &__avatar {
+    width: 60px;
+    height: 50px;
+    .MuiAvatar-circle {
+      width: 50px;
+      height: 50px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+  }
+  &__title {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: 10px!important;
+    span {
+      font-weight: 900;
+      color: $baseTitleColor;
+      font-size: 15px;
+      font-family: $fontFamily;
+    }
+    p span{
+      font-weight: 400;
+      color: #aaa;
+      font-size: 15px;
+      font-family: $fontFamily;
+    }
+  }
+}
+
+.header__menu_mobile {
+  &__body {
+    padding: 20px 0 20px 0;
+    width: 280px;
+  }
+  .MuiPaper-root {
+    right: 30px!important;
+    left: unset!important;
+  }
+  .MuiListItemText-multiline {
+    padding-right: 20px;
+  }
+  .MuiButtonBase-root {
+    padding-left: 20px;
+    padding-right: 20px;
+    .MuiListItemIcon-root {
+      min-width: 40px;
+    }
+    .MuiListItemText-root {
+      span {
+        color: $baseTitleColor;
+      }
+    }
+  }
+  &__avatar {
+    width: 60px;
+    height: 50px;
+    .MuiAvatar-circle {
+      width: 50px;
+      height: 50px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+  }
+  &__title {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: 10px!important;
+    span {
+      font-weight: 900;
+      color: $baseTitleColor;
+      font-size: 15px;
+      font-family: $fontFamily;
+    }
+    p {
+      span{
+        font-weight: 400;
+        color: #aaa;
+        font-size: 15px;
+        font-family: $fontFamily;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        width: 100%;
+        float: left;
+      }
+    }
+  }
+}
+
+.header_button {
+  &__float {
+    .MuiFab-root {
+      background-color: #fff!important;
+    }
+    position: fixed!important;
+    bottom: 15px!important;
+    right: 15px!important;
+    background-color: #fff!important;
+    width: 55px!important;
+    height: 55px!important;
+    z-index: 1000!important;
+    svg {
+      fill: $baseColor;
+      font-size: 35px;
+    }
+  }
+}
+
+.footer_compare_boder {
+  max-width: 770px;
+  text-align: center;
+  margin: 0 auto;
+}
+.footer_compare {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  min-height: 100px;
+  background-color: $baseColor;
+  height: 70px;
+  z-index: 10000000;
+  @include breakpoint(mdDown) {
+    height: 170px;
+    padding: 0 20px;
+  }
+  &__content {
+    width: calc(100% - 200px);
+    float: left;
+    @include breakpoint(mdDown) {
+      width: calc(100% + 10px);
+      margin: 0 -5px;
+    }
+    &__item {
+      width: 130px;
+      float: left;
+      background-color: #f0f0f0;
+      height: 80px;
+      margin: 10px 5px;
+      border-radius: 4px;
+      &.hide_mobile {
+        @include breakpoint(mdDown) {
+          display: none;
+        }
+      }
+      @include breakpoint(mdDown) {
+        width: calc(50% - 10px);
+        margin: 10px 5px;
+        height: 100px;
+      }
+      &__avatar {
+        width: 120px;
+        height: 70px;
+        overflow: hidden;
+        vertical-align: middle;
+        position: relative;
+        border-radius: 4px;
+        float: left;
+        margin: 5px;
+        svg {
+          position: absolute;
+          top: 2px;
+          height: 20px;
+          width: 20px;
+          right: 2px;
+          fill: #000;
+          cursor: pointer;
+        }
+        @include breakpoint(mdDown) {
+          width: 100%;
+          height: 100px;
+          margin: 0;
+        }
+        img {
+          height: 100%;
+          width: 100%;
+          z-index: 10;
+          margin: auto;
+          object-fit: cover;
+        }
+      }
+      &__title {
+        margin: 10px 0;
+        width: calc(100% - 50px);
+        float: left;
+        padding: 5px 10px 0 10px;
+        line-height: 1.4;
+        font-family: $fontFamily;
+        font-size: 14px;
+        font-weight: 900;
+        color: #f0f0f0;
+        @include breakpoint(mdDown) {
+          display: none;
+        }
+      }
+    }
+  }
+  &__button {
+    width: 200px;
+    float: right;
+    @include breakpoint(mdDown) {
+      width: 100%;
+      float: left;
+    }
+    button {
+      width: 100%;
+      float: right;
+      height: 35px;
+      margin: 10px 0 0 5px;
+      font-family: $fontFamily;
+      font-size: 14px;
+      font-weight: 900;
+      cursor: pointer;
+      @include breakpoint(mdDown) {
+        width: 100%;
+        margin: 0px 0 0 0;
+      }
+      &.btn_compare {
+        background-color: #fff;
+        color: $baseColor;
+      }
+      &.btn_cancel {
+        color: #fff;
+        margin: 7px 0 0 5px;
+        border: 1px #fff solid;
+        height: 37px;
+        @include breakpoint(mdDown) {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.mega_menu_asl {
+  height: 70px;
+  float: right;
+  &:hover {
+    .card_asl {
+      display: block;
+    }
+  }
+}
+.card_asl {
+  max-width: 1600px!important;
+  width: 100%!important;
+  position: absolute!important;
+  top: 70px;
+  margin: 0 auto;
+  right: 0;
+  border-radius: 0!important;
+  padding: 0 10px;
+  display: none;
+  @include breakpoint(mdDown) {
+    padding: 0 10px;
+  }
+  &__body {
+    a {
+      color: $baseTitleColor;
+    }
+    &__item {
+      &__title {
+        font-size: 20px;
+        font-weight: 900;
+        font-family: $fontFamily;
+        color: $baseColor;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        width: 100%;
+        float: left;
+        line-height: 1.5;
+      }
+      &__child {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        width: 100%;
+        float: left;
+        font-family: $fontFamily;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 1.5;
+      }
+      &__sub_title {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        width: 100%;
+        float: left;
+        font-family: $fontFamily;
+        font-size: 15px;
+        font-weight: 900;
+        line-height: 1.5;
+      }
+    }
+  }
+}

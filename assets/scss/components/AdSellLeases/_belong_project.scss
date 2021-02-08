@@ -1,0 +1,96 @@
+.project-info {
+  &.overflow_hidden {
+    overflow: hidden;
+  }
+  &__belong_project {
+    width: 100%;
+    float: left;
+    background: #f0f0f0;
+    border-radius: 4px;
+    padding: 15px;
+    @include breakpoint(mdDown) {
+      border-radius: 0;
+      padding: 0;
+      background-color: unset;
+    }
+    &__avatar {
+      width: 200px;
+      height: 200px;
+      float: left;
+      overflow: hidden;
+      vertical-align: middle;
+      position: relative;
+      @include breakpoint(mdDown) {
+        width: calc(100% + 40px);
+        margin: 0 -20px 0 -20px;
+        height: 60vw !important;
+        border-radius: 0;
+      }
+      img {
+        width: 100%;
+        border-radius: 4px;
+        height: 100%;
+        z-index: 10;
+        margin: auto;
+        object-fit: cover;
+      }
+    }
+    &__title {
+      width: calc(100% - 200px);
+      float: left;
+      padding: 0 20px 0 20px;
+      @include breakpoint(mdDown) {
+        width: 100%;
+        margin: 20px 0 0 0;
+        padding: 0;
+      }
+      &__button {
+        width: 100%;
+        float: left;
+        margin: 15px 0 0 0!important;
+        button {
+          border: 2px $baseColor solid!important;
+          background-color: unset;
+          padding-left: 25px!important;
+          padding-right: 25px!important;
+          border-radius: 30px;
+          font-size: 14px!important;
+          font-family: $fontFamily!important;
+          font-weight: 900!important;
+          color: $baseColor!important;
+          @include breakpoint(mdDown) {
+            width: 100%!important;
+          }
+        }
+      }
+      &__name {
+        width: 100%;
+        float: left;
+        font-family: $fontFamily;
+        font-weight: 900;
+        font-size: 20px;
+        color: $baseTitleColor;
+        line-height: 1.5;
+      }
+      &__description {
+        width: 100%;
+        float: left;
+        font-family: $fontFamily;
+        color: $baseTitleColor;
+        font-size: 15px;
+        line-height: 1.5;
+        margin: 5px 0 0 0;
+        &__detail {
+          float: left;
+          width: 100%;
+          margin: 5px 0 0 0;
+          svg {
+            width: 20px;
+            height: auto;
+            margin: 0 5px -5px 0;
+          }
+        }
+      }
+    }
+  }
+}

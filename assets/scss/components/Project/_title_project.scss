@@ -1,0 +1,111 @@
+@import "../../_variables.scss";
+
+.title-project {
+  width: 100%;
+  float: left;
+  margin: 0 0 0 0;
+  .breadcrumbs {
+    width: 100%;
+    float: left;
+    padding: 10px 0 20px 0;
+    margin-bottom: -10px;
+    &__item {
+      float: left;
+      margin: 0 5px 0 0;
+    }
+  }
+  &__address {
+    font-size: 15px!important;
+    font-family: $fontFamily;
+    color: $baseColor;
+    margin: 0 0 10px 0;
+    svg {
+      height: 20px;
+      fill: $baseColor;
+      margin: 10px 5px -4px 0;
+    }
+  }
+  &__title {
+    color: $baseTitleColor;
+    font-size: 35px;
+    font-family: $fontFamily;
+    font-weight: 900;
+    margin: 10px 0 10px 0;
+    line-height: 1.4;
+    @include breakpoint(smDown) {
+      font-size: 25px;
+    }
+  }
+  &__bottom {
+    width: 100%;
+    float: left;
+    border-bottom: 1px #f0f0f0 solid;
+    padding: 0 0 10px 0;
+    &__publish {
+      float: left;
+      color: #aaa;
+      font-weight: 900;
+      font-family: $fontFamily;
+      font-size: 14px;
+      line-height: 35px;
+    }
+    &__share {
+      float: right;
+      font-family: $fontFamily;
+      font-size: 15px;
+      color: #aaa;
+      @include breakpoint(smDown) {
+        width: calc(100% + 40px);
+        margin: 0 -20px 0 -20px;
+        padding: 0 20px 0 20px;
+      }
+      &__item {
+        float: left;
+        padding: 0;
+        margin: 0;
+        @include breakpoint(smDown) {
+          width: 25%;
+          border: 1px #aaa solid;
+          text-align: center;
+          &.active {
+            border: 1px $baseColor solid;
+            background-color: $baseColor;
+          }
+        }
+        &.active {
+          button {
+            color: $baseColor!important;
+            @include breakpoint(smDown) {
+              color: #fff!important;
+            }
+            svg {
+              fill: $baseColor!important;
+            }
+          }
+        }
+        button {
+          height: 35px;
+          font-family: $fontFamily;
+          font-size: 14px;
+          font-weight: 900;
+          color: #777!important;
+          text-transform: unset!important;
+          @include breakpoint(smDown) {
+            width: 100%;
+            color: #aaa!important;
+          }
+          svg {
+            width: 20px;
+            height: 20px;
+            margin: 0 8px 0 0;
+            fill: #777!important;
+            @include breakpoint(smDown) {
+              display: none;
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

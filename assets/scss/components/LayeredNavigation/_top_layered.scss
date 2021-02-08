@@ -1,0 +1,101 @@
+@import "../../variables";
+.top_layered {
+  background-color: #f0f0f0;
+  width: calc(100% - 60px)!important;
+  float: left;
+  padding: 15px;
+  margin: 0 30px 20px 30px!important;
+  border-radius: 4px;
+  @include breakpoint(mdDown) {
+    width: 100%!important;
+    margin: 0 0 20px 0!important;
+    padding: 15px 20px;
+  }
+  &__select{
+    &__label {
+      float: left;
+      font-size: 15px;
+      font-weight: 900;
+      margin: 2px 8px 0 0;
+      font-family: $fontFamily;
+      @include breakpoint(mdDown) {
+        display: none;
+      }
+    }
+    &__dropdown {
+      float: left;
+      position: relative;
+      font-size: 15px;
+      font-weight: 400;
+      font-family: $fontFamily;
+      select {
+        padding: 0 20px 0 5px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        text-indent: 1px;
+        text-overflow: '';
+        border: 0;
+        appearance: none;
+        cursor: pointer;
+        background-color: unset;
+        font-size: 15px!important;
+        z-index: 200;
+        position: relative;
+        @include breakpoint(mdDown) {
+          padding: 0 20px 0 0;
+        }
+      }
+      svg {
+        position: absolute;
+        top: 4px;
+        right: 5px;
+        width: 10px;
+        height: 10px;
+        z-index: 0;
+      }
+    }
+  }
+  &__right {
+    text-align: right;
+    ul {
+      float: right;
+      list-style-type: none;
+      font-family: $fontFamily;
+      font-size: 15px;
+      line-height: 25px;
+      margin: 0 20px 0 0;
+      li {
+        float: left;
+        margin: 0 5px 0 5px;
+        span {
+          font-weight: 900;
+        }
+      }
+    }
+    &__order {
+      float: right;
+      span {
+        font-size: 15px;
+        font-family: $fontFamily;
+        font-weight: 900;
+        margin: 0 5px 0 0;
+      }
+      button {
+        border: 0;
+        background-color: unset;
+        outline:none;
+        color: unset;
+        height: 20px;
+        margin: 0 0 0 10px;
+        svg {
+          width: 20px;
+          height: 20px;
+          margin: 0 0 -4px 0;
+          fill: #b3b3b3;
+          cursor: pointer;
+          color: #b3b3b3;
+        }
+      }
+    }
+  }
+}

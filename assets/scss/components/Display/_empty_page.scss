@@ -1,0 +1,25 @@
+.empty-page {
+  float: left;
+  padding: 250px 20px 250px 20px;
+  &__title {
+    width: 100%;
+    float: left;
+    text-align: center;
+    font-family: $fontFamily;
+    font-size: 26px;
+    font-weight: 900;
+    color: $baseTitleColor;
+    line-height: 1.5;
+  }
+  &__description {
+    width: 100%;
+    float: left;
+    text-align: center;
+    font-family: $fontFamily;
+    font-size: 15px;
+    font-weight: 400;
+    color: $baseTitleColor;
+    line-height: 1.5;
+    margin: 0px 0 0 0;
+  }
+}

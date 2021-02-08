@@ -1,0 +1,187 @@
+// Home
+.banner-breadcrumb {
+  width: 100%;
+  padding: 40px 0;
+  background-image: url("https://nhadatmoi.net/images/img/slide3.jpg");
+  background-size: cover;
+  background-position: center;
+  color: $color-white;
+  text-align: center;
+
+  &__name {
+    color: $color-white;
+  }
+
+  &__breadcrumb {
+    max-width: 320px;
+    padding: 10px 0;
+    background: $color-black-light;
+    margin: auto;
+    border-radius: 3px;
+  }
+}
+
+.banner-slider {
+  width: 100%;
+  float: left;
+  margin: 0;
+  overflow: hidden;
+  background-color: #707070;
+  .slick-slide {
+    padding: 0;
+    border-right: 4px #262626 solid;
+    outline: none;
+  }
+  .slick-list {
+    width: calc(100% + 4px);
+    margin-right: -4px;
+  }
+  &__navigate-next, &__navigate-before {
+    width: 50px;
+    height: 50px;
+    z-index: 100;
+    position: absolute;
+    top: 150px;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.4);
+    &:hover {
+      background-color: #fff;
+    }
+    svg {
+      width: 30px;
+      height: 30px;
+      margin: 10px;
+      fill: $baseTitleColor;
+    }
+  }
+  &__navigate-next {
+    right: 30px;
+  }
+  &__navigate-before {
+    left: 30px;
+  }
+  &__item {
+    height: 350px;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    background-image: url(https://static.nhadatmoi.net/default/nhadatmoi-default.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    background-color: #707070;
+    img {
+      height: 354px;
+      width: 100%;
+      outline: none;
+      object-fit: cover;
+    }
+  }
+}
+
+.banner-footer {
+  width: 100%;
+  margin: 0 0 30px 0;
+  min-height: 75px;
+  background-color: #262626;
+  float: left;
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .slick-slide {
+    padding: 0;
+    outline: none;
+    border-right: 4px rgba(0,0,0,0) solid;
+  }
+  &__images {
+    width: calc(50% - 10px);
+    padding: 7px 0 0 0;
+    margin: 0 10px 0 0;
+    position: relative;
+    float: left;
+    text-align: right;
+    @include breakpoint(mdDown) {
+      width: 100%;
+      margin: 0 0 0 0;
+      text-align: center;
+    }
+    &__item {
+      height: 60px;
+      margin: 0;
+      padding: 0;
+      outline: none;
+      img {
+        height: 100%;
+        width: 100%;
+        outline: none;
+        object-fit: cover;
+      }
+    }
+    .slick-arrow {
+      top: 55%!important;
+      z-index: 100;
+      &.slick-prev {
+        left: -10px;
+      }
+      &.slick-next {
+        right: -6px;
+      }
+    }
+  }
+  &__button {
+    width: calc(50% - 10px);
+    margin: 0 0 0 10px;
+    float: left;
+    &__item {
+      width: 25%;
+      height: 60px;
+      float: left;
+      cursor: pointer;
+      margin: 7px 0 7px 0;
+      border-right: 1px #3E3E3E solid;
+      text-align: center;
+      line-height: 60px;
+      font-weight: 400;
+      overflow: hidden;
+      font-family: $fontFamily;
+      font-size: 14px!important;
+      color: #999999;
+      user-select: none;
+      &:hover {
+        background-color: #3E3E3E;
+        color: #ddd;
+        svg {
+          fill: #ddd;
+        }
+      }
+      @include breakpoint(lgDown) {
+        width: 100px;
+      }
+      &.active {
+        background: #3E3E3E;
+        color: #ddd;
+        svg {
+          fill: #ddd;
+        }
+      }
+      svg {
+        width: 30px;
+        height: 30px;
+        fill: #999999;
+        margin: 0 5px -9px 0;
+      }
+    }
+  }
+}
+.pswp-thumbnail {
+  display: inline-block;
+  width: 120px;
+  height: 90px;
+  margin: 0 10px 10px 0;
+  cursor: pointer;
+  img {
+    max-width: 100%;
+  }
+}

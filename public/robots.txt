@@ -1,0 +1,15 @@
+# File: ROBOTS.TXT
+# Made for NHADATMOI.NET
+# (C) 2020 By NHADATMOI's SEO Team - Get high ranking and MORE traffic...
+
+User-agent: Googlebot
+Allow: *.css*
+Allow: *.js*
+
+# Global
+User-agent: *
+Disallow: *?f
+Disallow: *?q
+Disallow: */attachment/*
+
+Sitemap: https://nhadatmoi.net/sitemap/sitemap.xml

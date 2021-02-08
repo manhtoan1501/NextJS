@@ -1,0 +1,46 @@
+@import "../../_variables.scss";
+.card-broker{
+  outline: none;
+  text-align: center;
+  img{
+    width: 100%;
+  }
+  &__img{
+    margin: auto;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border: 3px solid $color-blue;
+    outline: none;
+  }
+  &__rate{
+    &__icon{
+      color: $color-blue;
+    }
+  }
+  &__name{
+    margin: 5px 0;
+  }
+  &__projects{
+    border: 1px solid $color-blue;
+    padding: 2px 10px;
+    border-radius: 3px;
+  }
+}
+
+
+.bg-blue-dark{
+  background:$color-blue-dark;
+}
+
+.bg-blue{
+  background:$color-blue;
+}
+
+.bg-purple{
+  background:$color-purple;
+}
+
+.bg-blue-dark{
+}

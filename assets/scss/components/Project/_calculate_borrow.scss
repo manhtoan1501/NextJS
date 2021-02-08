@@ -1,0 +1,63 @@
+.calculate-borrow {
+  background: $color-grey;
+  padding: 5px;
+  float: left;
+  width: 100%;
+  &__inputs {
+    background: $color-white;
+    height: 100%;
+    padding: 20px;
+    &__btn {
+      width: 100%;
+      text-align: center;
+      padding: 10px 0!important;
+      background: none;
+      border: 2px $baseColor solid!important;
+      color: $baseColor!important;
+      font-weight: 600;
+      font-size: 16px;
+      &:hover {
+        background: $baseColor!important;
+        color: $color-white!important;
+      }
+    }
+  }
+
+  &__chart {
+    width: 100% !important;
+    height: 200px !important;
+
+    &__circle {
+    }
+  }
+
+  &__statistical {
+    text-align: center;
+
+    &__number {
+      color: $color-purple;
+    }
+  }
+
+
+  &__line{
+    border-bottom: 1px solid $color-black-light;
+  }
+
+  &__permonth{
+    padding: 15px;
+  }
+}
+
+.slider{
+  &__border{
+    width: 100px;
+
+  }
+}
+
+.input-slider {
+  &__slider__border {
+    margin: -27px 0 0 0;
+  }
+}

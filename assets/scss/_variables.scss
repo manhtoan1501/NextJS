@@ -1,0 +1,98 @@
+/*********************
+BASE COLOR
+*********************/
+$baseColor: #1976d2;
+$baseBackgroundColor: #D9EDFE;
+$baseLightColor: #a3d2fa;
+$baseLightBackgroundColor: #f5fcff;
+$baseBoldColor: #045EA8;
+$baseTitleColor: #444;
+$baseTitleLightColor: #aaa;
+
+$fontFamily: 'Roboto', sans-serif;
+
+/*********************
+BREAKPOINTS
+*********************/
+@mixin breakpoint($point) {
+  /***
+    Breakpoint Up
+   */
+  @if $point == xlDown {
+    @media (max-width: 1919px)  { @content ; }
+  }
+  @else if $point == lgDown {
+    @media (max-width: 1279px)  { @content ; }
+  }
+  @else if $point == mdDown {
+    @media (max-width: 959px)  { @content ; }
+  }
+  @else if $point == smDown {
+    @media (max-width: 599px)  { @content ; }
+  }
+  /***
+    Breakpoint Down
+   */
+  @else if $point == xlUp {
+    @media (min-width: 1920px)  { @content ; }
+  }
+  @else if $point == lgUp {
+    @media (min-width: 1280px)  { @content ; }
+  }
+  @else if $point == mdUp {
+    @media (min-width: 960px)  { @content ; }
+  }
+  @else if $point == smUp {
+    @media (min-width: 600px)  { @content ; }
+  }
+}
+
+
+
+// Color
+
+$color-grey-light: #f4f6f8;
+$color-grey: #dfe3e8;
+$color-grey-dark: #dfe3e8;
+
+$color-white: #fff;
+
+$color-black-light: #454f5b;
+$color-black: black;
+
+$color-yellow-light: #ffea8a;
+$color-yellow:#EEC200;
+$color-yellow-dark: #8a6116;
+
+$color-orange-light:#FFC58B;
+$color-orange:#F49342;
+$color-orange-dark:#C05717;
+
+$color-red-light:#FEAD9A;
+$color-red:#DE3618;
+$color-red-dark:#BF0711;
+
+$color-purple-light:#E3D0FF;
+$color-purple:#9C6ADE;
+$color-purple-dark:#50248F;
+
+$color-green-dark: #00ab6b;
+$color-green:#50B83C;
+$color-green-light: #28b485;
+
+$color-blue-light: #b4e1fa;
+$color-blue: #1A4684;
+$color-blue-dark: #084e8a;
+
+// Font-size
+
+$font-size-h1: 60px;
+$font-size-h2: 36px;
+$font-size-h3: 30px;
+$font-size-h4: 24px;
+$font-size-h5: 16px;
+$font-size-h6: 14px;
+
+// Fonts
+$font-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+"Helvetica Neue", sans-serif;

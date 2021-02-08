@@ -1,0 +1,37 @@
+.mission-area {
+
+  &__left {
+    padding: 0 30px 0 0;
+
+    @include breakpoint(lgDown) {
+      padding: 0 30px 0 0;
+    }
+
+    @include breakpoint(mdDown) {
+      padding: 0 20px;
+    }
+
+    &__content {
+      text-align: left;
+      margin-bottom: 60px;
+      line-height: 1.5;
+      &__title {
+        font-size: 30px;
+      }
+
+      &__text {
+        margin-bottom: 20px;
+        color: #3E3E3E;
+      }
+
+      &__underline {
+        width: 120px;
+        height: 5px;
+        background-color: $baseBoldColor;
+        @include breakpoint(mdDown) {
+          margin: auto;
+        }
+      }
+    }
+  }
+}

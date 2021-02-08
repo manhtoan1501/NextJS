@@ -1,0 +1,173 @@
+.project-detail {
+  &__left {
+    width: calc(100% - 400px - 20px);
+    margin: 0 20px 0 0!important;
+    float: left;
+    font-family: $fontFamily;
+    @include breakpoint(lgDown) {
+      width: calc(100% - 300px - 20px);
+    }
+    @include breakpoint(mdDown) {
+      width: 100%;
+      margin: 0!important;
+    }
+  }
+  &__right {
+    width: 400px;
+    float: right;
+    @include breakpoint(lgDown) {
+      width: 300px;
+    }
+  }
+}
+.container-big {
+  padding: 0 30px;
+  max-width: 1600px;
+  margin: 0 auto;
+  @include breakpoint(mdDown) {
+    padding: 0 15px;
+  }
+}
+
+.project-info {
+  width: 100%;
+  float: left;
+  &__overview {
+    width: calc(100% + 5px)!important;
+    margin: 10px -5px 0 0!important;
+    color: #637381;
+    font-size: 14px;
+    float: left;
+    @include breakpoint(mdDown) {
+      width: 100%!important;
+      margin: 5px 0 0 0!important;
+    }
+    &__item {
+      width: calc(33.333333333333% - 5px)!important;
+      padding: 5px 15px 5px 15px!important;
+      float: left;
+      background-color: #f5f5f5;
+      margin: 5px 5px 0 0!important;
+      max-width: unset!important;
+      flex-basis: unset!important;
+      &.full_width {
+        width: 100%!important;
+        margin: 5px 0 0 0!important;
+        background-color: #f5f5f5;
+      }
+      @include breakpoint(mdDown) {
+        width: 100%!important;
+        margin: 4px 0 0 0!important;
+      }
+      &__border {
+        padding: 5px 0 10px 0;
+      }
+      &__content {
+        float: left;
+        width: 150px;
+        svg {
+          width: 20px;
+          height: 20px;
+          fill: #637381;
+          margin: 0 10px -6px 0;
+        }
+      }
+      &__text {
+        width: calc(100% - 150px);
+        float: right;
+        text-align: right;
+        line-height: 1.5;
+      }
+    }
+  }
+  &__maps {
+    font-size: 15px!important;
+    font-family: $fontFamily!important;
+    color: $baseTitleColor;
+    line-height: 1.5;
+    width: 100%;
+    float: left;
+    font-weight: 400;
+    padding-bottom: 0;
+    word-wrap: break-word;
+  }
+  &__description, &__description p, &__description span {
+    font-size: 15px!important;
+    font-family: $fontFamily!important;
+    color: $baseTitleColor;
+    line-height: 1.5;
+    width: 100%;
+    float: left;
+    font-weight: 400;
+    padding-bottom: 0;
+    word-wrap: break-word;
+    word-break: break-all;
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    h2 {
+      width: 100%;
+      float: left;
+      font-size: 23px;
+      font-family: $fontFamily;
+      font-weight: 900;
+      color: $baseColor;
+    }
+    iframe {
+      border: 0;
+      margin: 0  0 20px 0;
+    }
+    img {
+      width: 100%;
+      margin: 15px 0 15px 0;
+      max-width: 100%;
+    }
+    p {
+      margin: 5px 0;
+    }
+  }
+  &__video {
+    iframe {
+      border: 0;
+      width: 100%;
+      max-height: 500px;
+    }
+  }
+}
+
+.project-info-title {
+  width: 100%;
+  float: left;
+  font-size: 23px;
+  font-family: $fontFamily;
+  font-weight: 900;
+  color: $baseColor;
+  line-height: 1.5;
+  margin: 30px 0 10px 0;
+}
+
+.project-body-ad-sell-lease {
+  margin: 10px -30px 0 -30px;
+  float: left;
+  width: calc(100% + 60px);
+  @include breakpoint(mdDown) {
+    width: calc(100% + 40px);
+    margin: 10px -20px 0 -20px;
+  }
+}
+
+.project-body-broker {
+  width: calc(100% + 10px);
+  margin: 10px -10px 0 -10px;
+  float: left;
+  &__broker {
+    border: 1px #f0f0f0 solid;
+    margin-bottom: 10px!important;
+    float: left;
+    .contact-area__title__information {
+      padding-top: 0!important;
+      padding-bottom: 10px!important;
+    }
+  }
+}

@@ -1,0 +1,97 @@
+.banner_block {
+  width: 100%;
+  float: left;
+  overflow: hidden;
+}
+.banner_ecommerce {
+  width: 100%;
+  float: left;
+  padding: 0 30px 0 30px;
+  @include breakpoint(mdDown) {
+    padding: 0 20px;
+    margin: 0 -20px 0 -20px!important;
+    width: calc(100% + 40px)!important;
+    max-width: unset!important;
+  }
+  &__body {
+    background-color: rgba($baseColor, 0.9);
+    border-radius: 4px;
+    width: 100%;
+    float: left;
+    margin: 0 0 20px 0;
+    @include breakpoint(mdDown) {
+      border-radius: 0;
+    }
+    &__left {
+      width: 45%;
+      float: left;
+      padding: 32px 30px 40px 50px;
+      max-width: 540px;
+      @include breakpoint(mdDown) {
+        width: 100%;
+        max-width: 1000px;
+        padding: 45px 20px 20px 20px;
+      }
+      &__title {
+        width: 100%;
+        font-size: 35px;
+        font-family: $fontFamily;
+        font-weight: 900;
+        color: #fff;
+        line-height: 1.5;
+        @include breakpoint(lgUp) {
+          font-size: 40px;
+        }
+        @include breakpoint(mdDown) {
+          text-align: center;
+        }
+      }
+      &__description {
+        width: 100%;
+        font-size: 18px;
+        font-family: $fontFamily;
+        font-weight: 400;
+        color: #f5f5f5;
+        line-height: 1.5;
+        @include breakpoint(mdDown) {
+          text-align: center;
+        }
+      }
+      &__button {
+        width: 100%;
+        float: left;
+        margin: 20px 0 0 0;
+        @include breakpoint(mdDown) {
+          text-align: center;
+        }
+        button {
+          border: 2px #fff solid;
+          color: #fff!important;
+          background-color: rgba(0,0,0,0)!important;
+          padding: 10px 50px;
+          border-radius: 30px;
+          font-weight: 900;
+          font-family: $fontFamily;
+        }
+      }
+    }
+    &__right {
+      width: 55%;
+      float: right;
+      text-align: right;
+      @include breakpoint(mdDown) {
+        width: 100%;
+      }
+      img {
+        height: 350px;
+        margin: 0 30px;
+        @include breakpoint(mdDown) {
+          width: calc(100% - 40px);
+          height: auto;
+          margin: 20px;
+          max-height: 350px;
+        }
+      }
+    }
+  }
+}

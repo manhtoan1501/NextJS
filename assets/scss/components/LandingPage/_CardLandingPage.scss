@@ -1,0 +1,27 @@
+.cards-area{
+  &__card{
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px 2px #aaa3;
+    padding: 30px 20px;
+    min-height: 287px;
+    @include breakpoint(lgDown) {
+      min-height: 287px;
+    }
+    img {
+      height: 80px;
+      margin: 20px 0;
+    }
+    &__title{
+      font-size: 20px;
+      font-weight: 900;
+      margin-bottom:10px;
+    }
+
+    &__description{
+      font-size: 14px;
+      line-height: 1.5;
+      color: #3E3E3E;
+    }
+  }
+}

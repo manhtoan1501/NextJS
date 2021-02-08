@@ -1,0 +1,14 @@
+.strengths-area {
+
+  &__content {
+
+    &__title {
+      color: $baseTitleColor;
+    }
+
+    &__text {
+      line-height: 1.5;
+      color: #3E3E3E;
+    }
+  }
+}

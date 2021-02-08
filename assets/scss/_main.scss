@@ -1,0 +1,87 @@
+body {
+  overflow-y: scroll!important;
+  padding: unset!important;
+  font-family: $fontFamily;
+}
+.body_container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.content_index_button {
+  width: 300px;
+  float: left;
+  text-align: center;
+  padding: 0 30px;
+  @include breakpoint(mdDown) {
+    padding: 0 20px;
+  }
+  button {
+    font-family: $fontFamily;
+    font-size: 14px;
+    font-weight: 900;
+    margin: -15px 0 30px 0;
+    color: white;
+    padding: 10px 15px!important;
+    cursor: pointer;
+    background: #1976d2;
+    width: 100%;
+    border-radius: 4px;
+    border: 2px solid #e6e6e6;
+    &:hover {
+      background: #2196f3;
+    }
+  }
+}
+
+.zalo-share-button {
+  display: none;
+}
+
+.zalo_share {
+  display: none;
+}
+
+img{
+  max-width: 100%;
+}
+
+.body-general{
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.title-general{
+  font-size: 30px;
+  font-weight: 900;
+  margin-bottom: 15px;
+
+  @include breakpoint(mdDown) {
+    text-align: center;
+  }
+}
+
+.description-general{
+  font-size: 16px;
+  text-align: justify;
+}
+
+
+.body_sitemap {
+  &__block {
+    width: 100%;
+    float: left;
+    margin: 0 0 100px 0;
+    .sitemap_item {
+      padding: 0 30px 0 30px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      float: left;
+      width: 100%;
+      @include breakpoint(mdDown) {
+        padding: 0 20px 0 20px;
+      }
+    }
+  }
+}

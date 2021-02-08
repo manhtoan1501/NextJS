@@ -1,0 +1,130 @@
+@import "../../_variables.scss";
+.footer {
+  background-color: #e0e0e0;
+  min-height: 30px;
+  padding: 0 30px;
+  font-family: $fontFamily;
+  @include breakpoint(mdDown) {
+    padding: 0 20px;
+  }
+  .footer_body {
+    border-bottom: 1px #eee solid;
+    padding: 20px 0 20px 0;
+    .footer_body__item {
+      padding: 0 30px 0 0;
+      &.border_bottom_mobile {
+        @include breakpoint(mdDown) {
+          border-bottom: 1px #f0f0f0 solid;
+          padding: 0 0 20px 0;
+          margin: 0 0 20px 0;
+        }
+      }
+      .footer_body__item_title {
+        width: 100%;
+        float: left;
+        color: $baseTitleColor;
+        font-family: $fontFamily;
+        font-size: 16px;
+        font-weight: 900;
+        line-height: 1.5;
+        margin: 5px 0 5px 0;
+      }
+      .footer_body__item_description {
+        width: 100%;
+        float: left;
+        color: $baseTitleColor;
+        font-family: $fontFamily;
+        font-size: 14px;
+        line-height: 1.5;
+        margin: 5px 0 5px 0;
+        a {
+          color: $baseTitleColor;
+        }
+        .footer_body__item_description_icon {
+          width: 30px;
+          height: 30px;
+          background-color: rgb(245, 245, 245);
+          border-radius: 50%;
+          float: left;
+          svg {
+            fill: $baseTitleColor;
+            width: 20px;
+            height: 20px;
+            margin: 5px;
+          }
+        }
+        .footer_body__item_description_text {
+          float: left;
+          width: calc(100% - 40px);
+          margin: -2px 0 0 10px;
+          font-family: $fontFamily;
+          .footer_body__item_description_text_title {
+            font-weight: 900;
+            margin: 0 0 3px 0;
+          }
+        }
+      }
+      .footer_body__item_branch {
+        width: 100%;
+        float: left;
+        margin: 10px 0 0 0;
+        img {
+          height: 50px;
+          margin: 0 10px 0 0;
+        }
+      }
+    }
+    .footer_body__apps {
+      border-top: 1px #eee solid;
+      margin: 20px 0;
+      padding: 20px 0 0 0;
+      &.last {
+        margin: 0;
+      }
+      .footer_body__apps_title {
+        font-weight: 900;
+        font-size: 14px;
+        width: 100%;
+        float: left;
+      }
+      .footer_body__apps_payment {
+        width: 100%;
+        float: left;
+        padding: 20px 0 0 0;
+        cursor: pointer;
+        img {
+          height: 50px;
+          border: 1px #eee solid;
+          border-radius: 4px;
+          margin: 0 8px 0 0;
+          &.no_border {
+            border: 0;
+            height: 48px;
+          }
+        }
+      }
+    }
+  }
+  .footer_bottom {
+    padding: 20px 0 20px 0;
+    font-size: 14px;
+    .footer_bottom__left {
+      text-align: left;
+      color: #aaa;
+    }
+    .footer_bottom__center {
+      color: #aaa;
+      width: 100%;
+      text-align: center;
+      line-height: 1.5;
+    }
+    .footer_bottom__right {
+      text-align: right;
+      a {
+        margin: 0 0 0 15px;
+        float: right;
+        color: #aaa;
+      }
+    }
+  }
+}

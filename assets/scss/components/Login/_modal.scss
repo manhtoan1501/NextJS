@@ -1,0 +1,136 @@
+.login {
+  // width: 100%;
+  // text-align: center;
+  // background-image: url("https://static.nhadatmoi.net/default/login-background.svg");
+  // background-repeat: no-repeat;
+  // background-position: bottom center;
+  // background-size: 100%;
+  // position: relative;
+  // padding: 0 20px;
+  @include breakpoint(lgDown) {
+    background-image: unset;
+  }
+  &__close {
+    width: 100%;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    text-align: right;
+    &__button {
+      border: 0!important;
+      outline: none!important;
+      width: 40px!important;
+      height: 40px!important;
+      min-width: 40px!important;
+      padding: 0 !important;
+      border-radius: 50%!important;
+      svg {
+        width: 30px;
+        height: 30px;
+        margin: 5px;
+      }
+    }
+  }
+  &__modal {
+    // max-width: 350px;
+    // margin: 0 auto;
+    &__title {
+      float: left;
+      margin: 70px 0 10px 0;
+      font-family: $fontFamily;
+      font-size: 30px;
+      font-weight: 900;
+      color: $baseColor;
+      width: 100%;
+      text-align: center;
+      @include breakpoint(lgDown) {
+        font-size: 20px;
+      }
+    }
+    &__description {
+      float: left;
+      font-family: $fontFamily;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #0000008a;
+      width: 100%;
+      text-align: center;
+    }
+    &__block {
+      width: 100%;
+      margin: 10px 0 10px 0;
+      float: left;
+      text-align: left;
+      .MuiButton-label {
+        justify-content: unset!important;
+      }
+      svg {
+        width: 20px;
+        height: 20px;
+        fill: $baseColor;
+        float: left;
+      }
+      p {
+        float: left;
+        line-height: 20px;
+        font-family: $fontFamily;
+        font-size: 13px;
+        font-weight: 900;
+        color: $baseTitleColor;
+        margin: 0 0 0 10px;
+      }
+      &__google, &__email, &__zalo, &__facebook {
+        float: left;
+        width: 100%;
+        border-radius: 4px!important;
+        border: 1px #ccc solid!important;
+        padding: 15px 30px 13px 30px!important;
+        margin: 10px 0 0 0!important;
+        @include breakpoint(smDown) {
+          padding: 15px 15px 13px 15px!important;
+        }
+        &:hover {
+          background: #fff!important;
+          border: 1px $baseColor solid!important;
+          transition: 0.2s all;
+        }
+      }
+      &__zalo {
+        .st0 {
+          fill: #fdfefe
+        }
+        .st1 {
+          fill: #0180c7
+        }
+        .st2 {
+          fill: #0180c7
+        }
+        .st3 {
+          fill: none;
+          stroke: #0180c7;
+          stroke-width: 2;
+          stroke-miterlimit: 10
+        }
+      }
+      &__email {
+        opacity: 0.3;
+      }
+      &__google {
+        .st0{fill:#4285F4;}
+        .st1{fill:#34A853;}
+        .st2{fill:#FBBC04;}
+        .st3{fill:#EA4335;}
+      }
+    }
+    &__footer {
+      // width: 100%;
+      // float: left;
+      // margin: 10px 0 120px 0;
+      // line-height: 1.5;
+      // font-family: $fontFamily;
+      // font-size: 14px;
+      // color: #0000008a;
+    }
+  }
+}

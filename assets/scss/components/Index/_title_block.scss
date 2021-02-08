@@ -1,0 +1,25 @@
+@import "../../_variables.scss";
+.title_block {
+  width: 100%;
+  float: left;
+  padding: 20px 30px;
+  @include breakpoint(mdDown) {
+    padding: 20px;
+  }
+  .title_block__big_title {
+    width: 100%;
+    font-size: 30px;
+    font-family: $fontFamily;
+    color: $baseTitleColor;
+    font-weight: 900;
+    margin: 0 0 5px 0;
+    text-align: left;
+  }
+  .title_block__big_description {
+    width: 100%;
+    color: $baseTitleLightColor;
+    font-size: 15px;
+    font-family: $fontFamily;
+    font-weight: 400;
+  }
+}
