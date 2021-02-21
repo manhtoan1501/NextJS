@@ -3,7 +3,7 @@ import Grid from "@material-ui/core/Grid";
 import PhoneIphone from "@material-ui/icons/PhoneIphone";
 import EmailIcon from "@material-ui/icons/Email";
 import Link from 'next/link';
-//
+
 const FooterPage = (props) => {
   return (
     <Grid container spacing={0} item xs={12} className="footer" direction="row"
