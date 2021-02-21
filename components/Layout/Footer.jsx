@@ -3,7 +3,7 @@ import Grid from "@material-ui/core/Grid";
 import PhoneIphone from "@material-ui/icons/PhoneIphone";
 import EmailIcon from "@material-ui/icons/Email";
 import Link from 'next/link';
-
+//
 const FooterPage = (props) => {
   return (
     <Grid container spacing={0} item xs={12} className="footer" direction="row"
@@ -25,8 +25,8 @@ const FooterPage = (props) => {
             <div className="footer_body__item_description_text">
               <p className="footer_body__item_description_text_title">Địa chỉ</p>
               <p className="footer_body__item_description_text_content">
-                Số 12 Khuất Duy Tiến, Thanh Xuân, Hà Nội
-                </p>
+                88 Dương Đình Nghệ, Cầu Giấy, Hà Nội
+              </p>
             </div>
           </div>
           <div className="footer_body__item_description">

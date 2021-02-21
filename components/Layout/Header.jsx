@@ -4,7 +4,7 @@ import _ from 'lodash';
 
 const useStyles = makeStyles((theme) => ({
   header: {
-    height: 100,
+    height: 50,
     width: '100%',
     backgroundColor: '#1976d2'
   },

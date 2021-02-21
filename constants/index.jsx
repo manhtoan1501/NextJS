@@ -117,7 +117,7 @@ const titles = [
 
 const listMenu = [
   {
-    title: 'Nội Thất Phòng Ngủ',
+    title: 'Bàn ghế',
     rooms: [
       { room: 'Giường ngủ' },
       { room: 'Tủ quần áo' },
@@ -129,7 +129,7 @@ const listMenu = [
     ]
   },
   {
-    title: 'Nội Thất Phòng Khách',
+    title: 'Giường ngủ',
     rooms: [
       { room: 'Bàn ghế gỗ' },
       { room: 'Tủ Giày Dép' },
@@ -139,7 +139,7 @@ const listMenu = [
     ]
   },
   {
-    title: 'Nội Thất Nhà Bếp',
+    title: 'Tủ quần áo',
     rooms: [
       { room: 'Tủ bếp' },
       { room: 'Bộ bàn ăn' },
@@ -151,7 +151,7 @@ const listMenu = [
     ]
   },
   {
-    title: 'Nội Thất Phòng Thờ',
+    title: 'Bàn ăn',
     rooms: [
       { room: 'Bàn Thờ' },
       { room: 'Tủ Thờ' },
@@ -161,43 +161,7 @@ const listMenu = [
     ]
   },
   {
-    title: 'Nội Thất Văn Phòng',
-    rooms: [
-      { room: 'Giường ngủ' },
-      { room: 'Tủ quần áo' },
-      { room: 'Bàn trang điểm' },
-      { room: 'Bàn ghế phòng ngủ' },
-      { room: 'Tủ đầu giường' },
-      { room: 'Giường tầng' },
-      { room: 'Bộ phòng ngủ' },
-    ]
-  },
-  {
-    title: 'Đồ Gỗ Mỹ Nghệ',
-    rooms: [
-      { room: 'Giường ngủ' },
-      { room: 'Tủ quần áo' },
-      { room: 'Bàn trang điểm' },
-      { room: 'Bàn ghế phòng ngủ' },
-      { room: 'Tủ đầu giường' },
-      { room: 'Giường tầng' },
-      { room: 'Bộ phòng ngủ' },
-    ]
-  },
-  {
-    title: 'Sản Phẩm Khuyến Mại',
-    rooms: [
-      { room: 'Giường ngủ' },
-      { room: 'Tủ quần áo' },
-      { room: 'Bàn trang điểm' },
-      { room: 'Bàn ghế phòng ngủ' },
-      { room: 'Tủ đầu giường' },
-      { room: 'Giường tầng' },
-      { room: 'Bộ phòng ngủ' },
-    ]
-  },
-  {
-    title: 'Sản Phẩm Đã Xem',
+    title: 'Tủ kệ tivi',
     rooms: [
       { room: 'Giường ngủ' },
       { room: 'Tủ quần áo' },
@@ -231,19 +195,7 @@ const listMenu = [
       { room: 'Giường tầng' },
       { room: 'Bộ phòng ngủ' },
     ]
-  },
-  {
-    title: 'Sản phẩm mới',
-    rooms: [
-      { room: 'Giường ngủ' },
-      { room: 'Tủ quần áo' },
-      { room: 'Bàn trang điểm' },
-      { room: 'Bàn ghế phòng ngủ' },
-      { room: 'Tủ đầu giường' },
-      { room: 'Giường tầng' },
-      { room: 'Bộ phòng ngủ' },
-    ]
-  },
+  }
 ];
 
 const products = [

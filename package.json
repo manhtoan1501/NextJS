@@ -44,7 +44,8 @@
     "react-slick": "^0.25.2",
     "recharts": "^2.0.0-beta.1",
     "slick-carousel": "^1.8.1",
-    "url-parse": "^1.4.7"
+    "url-parse": "^1.4.7",
+    "yarn": "^1.22.4"
   },
   "devDependencies": {
     "@types/node": "^12.12.14",

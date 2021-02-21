@@ -14,8 +14,6 @@ import {
     MenuItem,
     Tooltip,
     Grid,
-
-
 } from '@material-ui/core';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import DraftsIcon from '@material-ui/icons/Drafts';
@@ -37,6 +35,7 @@ const useStyles = makeStyles((theme) => ({
         color: '#1976d2',
         fontSize: 14,
         paddingRight: 20,
+        fontWeight: 600,
     },
     arrow: {
         color: 'orange',
@@ -51,44 +50,37 @@ const useStyles = makeStyles((theme) => ({
 const NestedList = () => {
     const classes = useStyles();
     return (
-        <div>
-            <Grid container spacing={0} style={{ padding: '0 80px' }}>
-                <Grid item xs={3}>
-                    <List
-                        component="nav"
-                        aria-labelledby="nested-list-subheader"
-                        // className={classes.root}
-                        style={{ padding: 0 }}
-                    >
-                        {listMenu.map((item, index) => {
-                            const { rooms } = item
-                            return (
-                                <div key={index}>
-                                    <ListItem
-                                        className={classes.listItem}
-                                        button
-                                        style={{
-                                            backgroundColor: '#e3f2fd',
-                                            height: 35,
-                                            padding: '0 4px',
-                                            pointerEvents: 'auto'
-                                        }}
-                                    >
-                                        <GamepadIcon style={{ fontSize: 25, color: '#1976d2', padding: 4 }} />
-                                        <Typography className={classes.textItem}>
-                                            {item.title}
-                                        </Typography>
-                                    </ListItem>
-                                    <Divider />
-                                </div>
-                            );
-                        })}
-                    </List >
-                </Grid>
-                <Grid item xs={9}>
-                </Grid>
-            </Grid>
-        </div>
+        <div style={{ padding: 10 }}>
+            <List
+                component="nav"
+                aria-labelledby="nested-list-subheader"
+                style={{ padding: 0 }}
+            >
+                {listMenu.map((item, index) => {
+                    const { rooms } = item
+                    return (
+                        <div key={index}>
+                            <ListItem
+                                className={classes.listItem}
+                                button
+                                style={{
+                                    backgroundColor: '#e3f2fd',
+                                    height: 35,
+                                    padding: '0 4px',
+                                    pointerEvents: 'auto'
+                                }}
+                            >
+                                <GamepadIcon style={{ fontSize: 14, color: '#1976d2', margin: '-4px 4px 0px 0px' }} />
+                                <Typography className={classes.textItem}>
+                                    {item.title}
+                                </Typography>
+                            </ListItem>
+                            <Divider />
+                        </div>
+                    );
+                })}
+            </List >
+        </div >
     );
 }
 
